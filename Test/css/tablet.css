@@ -1,0 +1,65 @@
+/*******************
+* Version Tablette *
+********************/
+@media screen and (max-width: 992px) {
+
+    main {
+        margin: 20px;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #lodging-city {
+        width: 100%;
+    }
+
+    #lodging-city h2 {
+        left: 20px;
+    }
+
+    .card-lodging {
+        height: 200px;
+    }
+
+    #popular {
+        width: 70%;
+    }
+
+    .popular {
+        background-color: white;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .popular h2 {
+        left: 10px;
+    }
+
+    .card-popular {
+        margin: 20px 0px;
+        height: 200px;
+
+    }
+
+    .card-popular h3 {
+        padding-right: 5px;
+    }
+
+    .card-lodging {
+        width: 40%;
+        margin: 15px auto;
+    }
+
+    .see-more {
+        padding: 20px 50px 20px 10px;
+    }
+
+    /*permet de dire que mon texte ne passe pas à la ligne avec une exception :not*/
+    /*cela permet d'ajuster le bloc et évite de changer le font-size*/
+    .card-title h3:not(.popular h3) {
+        padding-right: 3px;
+        white-space: nowrap;
+    }
+}
